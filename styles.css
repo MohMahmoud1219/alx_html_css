@@ -1,0 +1,27 @@
+/* تطبيق Flexbox على body */
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+/* تطبيق Flexbox على main */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+  height: auto;
+  width: auto;
+}
+
+/* توزيع المساحة بين article و aside */
+article {
+  flex: 2;
+  overflow-y: auto;
+}
+
+aside {
+  flex: 1;
+  overflow-y: auto;
+}
