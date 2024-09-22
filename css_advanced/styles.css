@@ -1,42 +1,33 @@
-/* Reset some default browser styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Styling the header */
-header {
-  background-color: #123456; /* استبدل هذا بالقيمة الصحيحة من Figma */
-  color: #ffffff;
-  padding: 20px;
-  text-align: center;
-  font-family: 'Source Sans Pro', sans-serif; /* استبدل بنوع الخط الصحيح */
-}
-
-header h1 {
-  font-size: 36px; /* استبدل بالقيمة من Figma */
-}
-
-/* Banner section */
-.banner {
-  background-image: url('path_to_banner_image.jpg'); /* استبدل بمسار الصورة الصحيحة */
-  background-size: cover;
-  background-position: center;
-  height: 400px; /* استبدل بالقيمة الصحيحة من Figma */
+/* Styling the videos list section */
+.videos-list {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; /* المسافة بين الفيديوهات */
   justify-content: center;
-  color: #ffffff;
 }
 
-.banner h2 {
-  font-size: 48px; /* استبدل بالقيمة من Figma */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* يمكن استخدامه إذا كان هناك تأثير ظل */
+.videos-list .video-item {
+  width: 300px; /* استبدل بالقيمة الصحيحة من Figma */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* مثال على تنسيقات إضافية للصور */
-img {
-  max-width: 100%;
+.videos-list .video-item img {
+  width: 100%;
   height: auto;
+}
+
+.videos-list .video-item h3 {
+  font-size: 20px; /* استبدل بالحجم المناسب */
+  padding: 10px;
+  color: #333;
+}
+
+.videos-list .video-item p {
+  font-size: 16px;
+  padding: 0 10px 10px;
+  color: #777;
 }
