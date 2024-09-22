@@ -1,21 +1,16 @@
-/* تطبيق Flexbox على body */
+/* CSS Flexbox Layout */
 body {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
+  height: 100vh;
 }
 
-/* تطبيق Flexbox على main */
 main {
   display: flex;
   flex-direction: row;
   flex: auto;
-  height: auto;
-  width: auto;
 }
 
-/* توزيع المساحة بين article و aside */
 article {
   flex: 2;
   overflow-y: auto;
@@ -24,4 +19,22 @@ article {
 aside {
   flex: 1;
   overflow-y: auto;
+}
+
+header, footer {
+  background-color: lightgray;
+  padding: 10px;
+  text-align: center;
+}
+
+article, aside {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* For smaller screens (responsive design) */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
 }
