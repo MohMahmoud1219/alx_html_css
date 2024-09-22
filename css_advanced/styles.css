@@ -1,24 +1,36 @@
-/* Styling the quote section */
-.quote-section {
-  background-color: #f0f0f0; /* استبدل بالقيمة الصحيحة من Figma */
-  color: #333; /* استبدل بالقيمة الصحيحة */
+/* Styling the videos list section */
+.videos-list {
+  display: flex;
+  flex-wrap: wrap; /* لعرض العناصر بجانب بعضها البعض */
+  gap: 20px; /* المسافة بين الفيديوهات */
+  justify-content: center;
   padding: 20px;
-  font-family: 'Source Sans Pro', sans-serif; /* تأكد من استخدام الخط الصحيح */
-  text-align: center;
-  border-left: 5px solid #4682b4; /* استبدل بالقيمة من Figma */
-  margin: 30px 0;
+  background-color: #f9f9f9; /* استبدل باللون المناسب من Figma */
 }
 
-.quote-section blockquote {
-  font-size: 24px; /* تأكد من استخدام الحجم الصحيح من Figma */
-  font-style: italic;
-  line-height: 1.5;
+.videos-list .video-item {
+  width: 300px; /* استبدل بالقيمة المناسبة من Figma */
+  background-color: #fff; /* خلفية الفيديو */
+  border: 1px solid #ddd; /* الحدود */
+  border-radius: 8px; /* الزوايا */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* الظل */
 }
 
-.quote-section cite {
-  display: block;
-  margin-top: 15px;
-  font-size: 18px; /* حجم الخط الصحيح */
-  color: #666; /* لون مميز */
+.videos-list .video-item img {
+  width: 100%;
+  height: auto;
+}
+
+.videos-list .video-item h3 {
+  font-size: 18px; /* استبدل بالحجم المناسب */
+  padding: 10px;
+  color: #333;
+}
+
+.videos-list .video-item p {
+  font-size: 14px; /* حجم النص */
+  padding: 0 10px 10px;
+  color: #777;
 }
 
