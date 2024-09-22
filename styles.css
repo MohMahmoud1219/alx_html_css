@@ -3,33 +3,62 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  background-color: #f0f8ff; /* خلفية للجسم */
+  font-family: Arial, sans-serif; /* ضبط الخط */
+}
+
+header {
+  background-color: #4682b4; /* خلفية للرأس */
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2em; /* جعل الشعار أكبر */
+  margin-right: 15px;
 }
 
 main {
   display: flex;
   flex-direction: row;
   flex: auto;
+  margin: 10px;
 }
 
 article {
   flex: 2;
   overflow-y: auto;
+  background-color: #fdf5e6; /* خلفية للمقال */
+  padding: 15px;
+  border-radius: 5px; /* زوايا مستديرة */
+  border: 1px solid #ccc;
 }
 
 aside {
   flex: 1;
   overflow-y: auto;
+  background-color: #f5f5f5; /* خلفية للجانب */
+  padding: 15px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
-header, footer {
-  background-color: lightgray;
+footer {
+  background-color: #4682b4;
+  color: white;
   padding: 10px;
   text-align: center;
-}
-
-article, aside {
-  padding: 10px;
-  border: 1px solid #ccc;
 }
 
 /* For smaller screens (responsive design) */
