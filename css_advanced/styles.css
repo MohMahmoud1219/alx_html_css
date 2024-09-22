@@ -1,60 +1,40 @@
-/* Styling the membership section */
-.membership-section {
-  background-color: #f8f9fa; /* استبدل باللون الصحيح من Figma */
+/* Styling the FAQ section */
+.faq-section {
+  background-color: #f0f4f8; /* استخدم اللون الصحيح من Figma */
   padding: 40px 20px;
-  text-align: center;
 }
 
-.membership-section h2 {
-  font-size: 28px; /* تأكد من استخدام الحجم المناسب */
+.faq-section h2 {
+  font-size: 28px; /* حجم النص الصحيح */
   color: #333; /* لون النص */
-  margin-bottom: 20px;
-}
-
-.membership-section p {
-  font-size: 16px; /* حجم النص المناسب */
-  color: #666;
+  text-align: center;
   margin-bottom: 30px;
 }
 
-.membership-section .membership-options {
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* المسافة بين الخيارات */
+.faq-section .faq-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
 }
 
-.membership-section .membership-option {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px; /* زوايا مستديرة */
-  padding: 20px;
-  width: 250px; /* استبدل بالقيمة المناسبة من Figma */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* الظل */
-}
-
-.membership-section .membership-option h3 {
-  font-size: 22px; /* تأكد من الحجم المناسب */
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.membership-section .membership-option p {
-  font-size: 14px; /* حجم النص */
-  color: #777;
-  margin-bottom: 15px;
-}
-
-.membership-section .membership-option button {
-  background-color: #007bff; /* اللون المناسب من Figma */
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+.faq-section .faq-item h3 {
+  font-size: 20px; /* حجم العنوان */
+  color: #0056b3; /* لون العنوان من Figma */
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.membership-section .membership-option button:hover {
-  background-color: #0056b3; /* لون عند التحريك */
+.faq-section .faq-item p {
+  font-size: 16px; /* حجم النص */
+  color: #666;
+  display: none; /* إخفاء الإجابة افتراضيًا */
+  margin-top: 10px;
+}
+
+.faq-section .faq-item.active p {
+  display: block; /* عرض الإجابة عند الضغط على السؤال */
+}
+
+.faq-section .faq-item h3:hover {
+  color: #003d80; /* تغيير اللون عند التحريك */
 }
 
