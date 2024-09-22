@@ -1,25 +1,42 @@
-/* Basic CSS for testing */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+/* Reset some default browser styles */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/* Styling the header */
 header {
-  background-color: #4682b4;
-  color: white;
+  background-color: #123456; /* استبدل هذا بالقيمة الصحيحة من Figma */
+  color: #ffffff;
   padding: 20px;
   text-align: center;
+  font-family: 'Source Sans Pro', sans-serif; /* استبدل بنوع الخط الصحيح */
 }
 
-main {
-  padding: 20px;
+header h1 {
+  font-size: 36px; /* استبدل بالقيمة من Figma */
 }
 
-footer {
-  background-color: #4682b4;
-  color: white;
-  text-align: center;
-  padding: 10px;
+/* Banner section */
+.banner {
+  background-image: url('path_to_banner_image.jpg'); /* استبدل بمسار الصورة الصحيحة */
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* استبدل بالقيمة الصحيحة من Figma */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.banner h2 {
+  font-size: 48px; /* استبدل بالقيمة من Figma */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* يمكن استخدامه إذا كان هناك تأثير ظل */
+}
+
+/* مثال على تنسيقات إضافية للصور */
+img {
+  max-width: 100%;
+  height: auto;
 }
