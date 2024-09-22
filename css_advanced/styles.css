@@ -1,36 +1,60 @@
-/* Styling the videos list section */
-.videos-list {
+/* Styling the membership section */
+.membership-section {
+  background-color: #f8f9fa; /* استبدل باللون الصحيح من Figma */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.membership-section h2 {
+  font-size: 28px; /* تأكد من استخدام الحجم المناسب */
+  color: #333; /* لون النص */
+  margin-bottom: 20px;
+}
+
+.membership-section p {
+  font-size: 16px; /* حجم النص المناسب */
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.membership-section .membership-options {
   display: flex;
-  flex-wrap: wrap; /* لعرض العناصر بجانب بعضها البعض */
-  gap: 20px; /* المسافة بين الفيديوهات */
   justify-content: center;
+  gap: 20px; /* المسافة بين الخيارات */
+}
+
+.membership-section .membership-option {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px; /* زوايا مستديرة */
   padding: 20px;
-  background-color: #f9f9f9; /* استبدل باللون المناسب من Figma */
+  width: 250px; /* استبدل بالقيمة المناسبة من Figma */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* الظل */
 }
 
-.videos-list .video-item {
-  width: 300px; /* استبدل بالقيمة المناسبة من Figma */
-  background-color: #fff; /* خلفية الفيديو */
-  border: 1px solid #ddd; /* الحدود */
-  border-radius: 8px; /* الزوايا */
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* الظل */
-}
-
-.videos-list .video-item img {
-  width: 100%;
-  height: auto;
-}
-
-.videos-list .video-item h3 {
-  font-size: 18px; /* استبدل بالحجم المناسب */
-  padding: 10px;
+.membership-section .membership-option h3 {
+  font-size: 22px; /* تأكد من الحجم المناسب */
   color: #333;
+  margin-bottom: 10px;
 }
 
-.videos-list .video-item p {
+.membership-section .membership-option p {
   font-size: 14px; /* حجم النص */
-  padding: 0 10px 10px;
   color: #777;
+  margin-bottom: 15px;
+}
+
+.membership-section .membership-option button {
+  background-color: #007bff; /* اللون المناسب من Figma */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.membership-section .membership-option button:hover {
+  background-color: #0056b3; /* لون عند التحريك */
 }
 
