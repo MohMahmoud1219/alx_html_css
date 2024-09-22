@@ -27,6 +27,31 @@
   font-size: 16px; /* حجم النص */
   color: #666;
   display: none; /* إخفاء الإجابة افتراضيًا */
+  /* Styling the footer */
+.footer {
+  background-color: #333; /* اللون المناسب من Figma */
+  color: #fff; /* لون النص */
+  text-align: center; /* محاذاة النص إلى الوسط */
+  padding: 20px 0; /* الحشو */
+  position: relative; /* لتحديد مكان العنصر */
+  bottom: 0; /* تحديد موقعه في أسفل الصفحة */
+  width: 100%; /* جعله بعرض الصفحة الكامل */
+}
+
+.footer p {
+  margin: 0; /* إزالة الهوامش الافتراضية */
+  font-size: 14px; /* حجم النص */
+}
+
+.footer a {
+  color: #fff; /* لون الروابط */
+  text-decoration: underline; /* تحت الخط للروابط */
+}
+
+.footer a:hover {
+  color: #ddd; /* لون عند التحويم على الروابط */
+}
+
   margin-top: 10px;
 }
 
