@@ -232,5 +232,32 @@ button.btn {
 button.btn:hover {
     opacity: 0.9;
 }
+/* Footer Section */
+footer {
+    background-color: var(--footer-background-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: var(--text-color);
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #FF6565;
+}
+
 
 
